@@ -1,0 +1,18 @@
+For Cathay EDP Application  
+as of Aug 30 2014
+
+1. railsinstaller and mysql 5.5 and mysql workbench
+ - use cocacola as the mysql password
+2. rubymine
+3. download the repository (CathayEDP)
+4. extract mysql connector to C:\mysql-connector
+5. Copy libmysql.dll from C:\mysql-connector\lib to C:\RailsInstaller\Ruby1.9.3\bin
+6. Open the project in rubymine
+7. Open terminal in rubymine (Tools > Open Terminal...)
+8. gem install mysql2 --platform=ruby -- '--with-mysql-dir="C:\mysql-connector"'
+9. bundle install (Tools > Bundler > Install) -- AND enter the following options in the dialog box: --without production
+10. download the dump file from the nas
+11. extract the dump file
+12. import using mysql workbench
+
+
